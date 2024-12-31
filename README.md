@@ -24,3 +24,7 @@ Code Highlights:
     2. Celsius to Kelvin: kelvin = celsius + 273.15
     3. Fahrenheit to Celsius: celsius = (fahrenheit - 32) * 5/9
     4. Fahrenheit to Kelvin: kelvin = (fahrenheit-32)*5/9+273.15
+
+    
+
+
