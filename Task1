@@ -1,0 +1,53 @@
+/*c++ coding to calculate temperature conversion*/
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    float fahrenheit;
+    float celsius;
+    float kelvin;
+    string choice;
+    cout<<"Enter the temperature variable choice for conversion either cf or ck or fc or fk: ";
+    cin>>choice;
+    switch(choice[0]) {
+    case 'c':
+        if(choice=="cf"){
+            cout<<"enter temperature in celsius:";
+            cin>>celsius;
+            fahrenheit=(celsius* 9/5) + 32;
+            cout<<"celsius to fahrenheit is equal to:"<<fahrenheit<<endl;
+    }
+    else if(choice=="ck"){
+        cout<<"enter temperature in celsius:";
+        cin>>celsius;
+        kelvin=celsius + 273.15;
+        cout<<"celsius to kelvin is equal to:"<<kelvin<<endl;
+    }
+    else{
+        cout<<"invalid celsius choice";
+    }
+    break;
+    case 'f':
+     if(choice=="fc"){
+        cout<<"enter temperature in fahrenheit:";
+        cin>>fahrenheit;
+        celsius= (fahrenheit - 32) * 5/9;
+        cout<<"fahrenheit to celsius is equal to:"<<celsius<<endl;
+     }
+     else if(choice=="fk")
+    {
+        cout<<"enter temperature in fahrenheit:";
+        cin>>fahrenheit;
+        kelvin= (fahrenheit-32)*5/9+273.15;
+        cout<<"fahrenheit to kelvin is equal to:"<<kelvin<<endl;  
+    }
+    else{
+        cout<<"invalid fahrenheit choice";
+    }
+    break;
+    default:
+    cout<<"invalid temperature choice"<<endl;
+    }
+    return 0;
+}
